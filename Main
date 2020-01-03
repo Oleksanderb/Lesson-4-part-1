@@ -1,0 +1,25 @@
+package L4;
+
+public class Main {
+	public static void main(String args[]) {
+	Robot a=new Robot();
+	CoffeRobot b= new CoffeRobot();
+	RobotDancer c=new RobotDancer();
+	RobotCoocker d=new RobotCoocker();
+	
+	
+	a.work();
+	b.work();
+	c.work();
+	d.work();
+
+	Robot[] mass=new Robot[4];
+	mass[0]=new Robot();
+	mass[1]=new CoffeRobot();
+	mass[2]=new RobotDancer();
+	mass[3]=new RobotCoocker();
+	for(int i=0;i<4;i++) {
+		mass[i].work();
+	}
+}
+}
